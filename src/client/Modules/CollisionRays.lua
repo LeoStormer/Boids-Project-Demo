@@ -7,8 +7,8 @@ local ClientConstants = require(script.Parent.Constants)
 local CollisionRays: { Vector3 } = {}
 
 for i = 0, ClientConstants.NUM_COLLISION_RAYS - 1 do
-	local t = i / ClientConstants.NUM_COLLISION_RAYS
-	local Inclination = math.acos(1 - 2 * t)
+	local alpha = i / ClientConstants.NUM_COLLISION_RAYS
+	local Inclination = math.acos(1 - 2 * alpha)
 	local Azimuth = AngleIncrement * i
 	local x = math.sin(Inclination) * math.cos(Azimuth)
 	local y = math.sin(Inclination) * math.sin(Azimuth)
