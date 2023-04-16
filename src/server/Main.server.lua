@@ -1,0 +1,11 @@
+local PhysicsService = game:GetService("PhysicsService")
+PhysicsService:RegisterCollisionGroup("Entity")
+PhysicsService:RegisterCollisionGroup("EntityCollisionRays")
+PhysicsService:RegisterCollisionGroup("EntityOverlaps")
+
+PhysicsService:CollisionGroupSetCollidable("Entity", "Entity", false)
+PhysicsService:CollisionGroupSetCollidable("Entity", "EntityCollisionRays", false)
+PhysicsService:CollisionGroupSetCollidable("Entity", "EntityOverlaps", true)
+PhysicsService:CollisionGroupSetCollidable("EntityOverlaps", "EntityOverlaps", true)
+PhysicsService:CollisionGroupSetCollidable("EntityOverlaps", "EntityCollisionRays", false)
+PhysicsService:CollisionGroupSetCollidable("EntityOverlaps", "Default", false)

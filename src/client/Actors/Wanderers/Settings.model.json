@@ -1,0 +1,47 @@
+{
+    "className": "Folder",
+    "Children": [
+        {
+            "Name": "ReadyToReceive",
+            "ClassName": "BoolValue",
+            "Properties": {
+                "Value": false
+            }
+        },
+        {
+            "Name": "CollisionAvoidanceStrength",
+            "ClassName": "NumberValue",
+            "Properties": {
+                "Value": 50
+            }
+        },
+        {
+            "Name": "ContainmentStrength",
+            "ClassName": "NumberValue",
+            "Properties": {
+                "Value": 10
+            }
+        },
+        {
+            "Name": "WanderStrength",
+            "ClassName": "NumberValue",
+            "Properties": {
+                "Value": 20
+            }
+        },
+        {
+            "Name": "FlockStrength",
+            "ClassName": "NumberValue",
+            "Properties": {
+                "Value": 7
+            }
+        },
+        {
+            "Name": "SeekStrength",
+            "ClassName": "NumberValue",
+            "Properties": {
+                "Value": 10
+            }
+        }
+    ]
+}

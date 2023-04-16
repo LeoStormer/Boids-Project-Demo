@@ -1,0 +1,33 @@
+{
+    "className": "Folder",
+    "Children": [
+        {
+            "Name": "SeparationStrength",
+            "ClassName": "NumberValue",
+            "Properties": {
+                "Value": 3
+            }
+        },
+        {
+            "Name": "CohesionStrength",
+            "ClassName": "NumberValue",
+            "Properties": {
+                "Value": 4
+            }
+        },
+        {
+            "Name": "AlignmentStrength",
+            "ClassName": "NumberValue",
+            "Properties": {
+                "Value": 5
+            }
+        },
+        {
+            "Name": "WanderSphereRadius",
+            "ClassName": "NumberValue",
+            "Properties": {
+                "Value": 10
+            }
+        }
+    ]
+}

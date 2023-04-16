@@ -1,0 +1,137 @@
+{
+  "name": "Boids Project Demo",
+  "tree": {
+    "$className": "DataModel",
+
+    "ReplicatedStorage": {
+      "$path": "src/shared",
+      "Packages": {
+        "$path": "Packages",
+        "Spring": {
+          "$path": "library/Spring.lua"
+        }
+      },
+      "EntityTemplates": {
+        "$path": "assets/EntityTemplates"
+      },
+      "ObstacleTemplates": {
+        "$path": "assets/ObstacleTemplates"
+      }
+    },
+
+    "ServerScriptService": {
+      "$path": "src/server"
+    },
+
+    "StarterPlayer": {
+      "StarterPlayerScripts": {
+        "$path": "src/client"
+      }
+    },
+
+    "Workspace": {
+      "$properties": {
+        "FilteringEnabled": true,
+        "SignalBehavior": "Deferred"
+      },
+      "Baseplate": {
+        "$className": "Part",
+        "$properties": {
+          "BottomSurface": "Smooth",
+          "TopSurface": "Smooth",
+          "Transparency": 0.85,
+          "Anchored": true,
+          "Locked": true,
+          "Color": [0.356863, 0.356863, 0.356863],
+          "CFrame": [
+            0.0, -8.0, 0.0,
+            1.0, 0.0, 0.0,
+            0.0, 1.0, 0.0,
+            0.0, 0.0, 1.0
+          ],
+          "Size": [2048, 16, 2048]
+        },
+        "Texture": {
+          "$className": "Texture",
+          "$properties": {
+            "Texture": "rbxassetid://6372755229",
+            "Color3": [0, 0, 0],
+            "Transparency": 0.8,
+            "ZIndex": 1,
+            "StudsPerTileU": 8,
+            "StudsPerTileV": 8,
+            "OffsetStudsU": 0,
+            "OffsetStudsV": 0,
+            "Face": "Top"
+          }
+        }
+      },
+      "Entities": {
+        "$className": "Folder"
+      },
+      "Obstacles": {
+        "$className": "Folder"
+      }
+    },
+    
+    "Lighting": {
+      "$properties": {
+        "Ambient": [0.27451, 0.27451, 0.27451],
+        "OutdoorAmbient": [0.27451, 0.27451, 0.27451],
+        "Brightness": 3,
+        "TimeOfDay": "20:30:00",
+        "Technology": "ShadowMap",
+        "EnvironmentDiffuseScale": 1,
+        "EnvironmentSpecularScale": 1,
+        "ShadowSoftness": 0.2,
+        "GlobalShadows": true,
+        "GeographicLatitude": 0
+      },
+      "Atmosphere":{
+        "$className": "Atmosphere",
+        "$properties": {
+          "Density": 0.3,
+          "Offset": 0.25,
+          "Color": [0.780392, 0.780392, 0.780392],
+          "Decay": [0.415686, 0.439216, 0.490196],
+          "Glare": 0,
+          "Haze": 0
+        }
+      },
+      "Sky":{
+        "$className": "Sky",
+        "$properties": {
+          "MoonTextureId": "rbxassetid://6444320592",
+          "SkyboxBk": "rbxassetid://6444884337",
+          "SkyboxDn": "rbxassetid://6444884785",
+          "SkyboxFt": "rbxassetid://6444884337",
+          "SkyboxLf": "rbxassetid://6444884337",
+          "SkyboxRt": "rbxassetid://6444884337",
+          "SkyboxUp": "rbxassetid://6412503613",
+          "SunTextureId": "rbxassetid://6196665106",
+          "SunAngularSize": 11
+        }
+      },
+      "Bloom":{
+        "$className": "BloomEffect",
+        "$properties": {
+          "Intensity": 1,
+          "Threshold": 2
+        }
+      },
+      "SunRays":{
+        "$className": "SunRaysEffect",
+        "$properties": {
+          "Intensity": 0.01,
+          "Spread": 0.1
+        }
+      }
+    },
+
+    "SoundService": {
+      "$properties": {
+        "RespectFilteringEnabled": true
+      }
+    }
+  }
+}
