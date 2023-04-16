@@ -13,9 +13,9 @@ local spawnCFrame =
 	CFrame.new((ReplicatedConstants.WORLD_CENTER - Vector3.new(0, ReplicatedConstants.WORLD_HALF_SIZE.Y, 0)) / 2)
 
 local FlightAnimation = Instance.new("Animation")
-FlightAnimation.AnimationId = "http://www.roblox.com/asset/?id=10174626650"
+FlightAnimation.AnimationId = Constants.FLIGHT_ANIMATION_ID
 local FlightIdleAnimation = Instance.new("Animation")
-FlightIdleAnimation.AnimationId = "http://www.roblox.com/asset/?id=12888302224"
+FlightIdleAnimation.AnimationId = Constants.FLIGHT_IDLE_ANIMATION_ID
 
 local Flight = {}
 Flight._alive = false
